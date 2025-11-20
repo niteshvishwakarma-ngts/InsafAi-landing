@@ -3,6 +3,7 @@
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 import React, { useState } from "react";
 
+
 export default function AboutSection() {
     
 
@@ -15,15 +16,19 @@ export default function AboutSection() {
     },
     {
       question: "When will Insaaf AI launch?",
-      answer: "",
+      answer: "Insaaf AI is India's first AI-powered Legal Operating System designed to help lawyers, law firms, and citizens automate legal workflows, conduct research and ensure compliance with regulations",
     },
     {
       question: "Who can use Insaaf AI?",
-      answer: "",
+      answer: "Insaaf AI is India's first AI-powered Legal Operating System designed to help lawyers, law firms, and citizens automate legal workflows, conduct research and ensure compliance with regulations",
     },
     {
       question: "How does Insaaf AI ensure accuracy?",
-      answer: "",
+      answer: "Insaaf AI is India's first AI-powered Legal Operating System designed to help lawyers, law firms, and citizens automate legal workflows, conduct research and ensure compliance with regulations",
+    },
+    {
+      question: "Is my legal data secure?",
+      answer: "Insaaf AI is India's first AI-powered Legal Operating System designed to help lawyers, law firms, and citizens automate legal workflows, conduct research and ensure compliance with regulations",
     },
   ];
     const [openIndex, setOpenIndex] = useState(0);
@@ -31,7 +36,7 @@ export default function AboutSection() {
 
   return (
      <section>
-    <section  className="w-full  h-[85vh] bg-gradient-to-r from-[#f7f7f8] to-[#fde9d2] py-24 ">
+    <section  className="w-full  h-[85vh] bg-gradient-to-r from-[#fff5ef] to-[#fde9d2] py-24 ">
 
 
         
@@ -71,9 +76,9 @@ export default function AboutSection() {
         </div>
 
       </div>
-    </section>
+    </section>  
 
-    <section className="w-full bg-gradient-to-r from-[#fff5ef] to-[#f8f1e8] py-16">
+    <section className="w-full bg-gradient-to-r from-[#fff5ef] to-[#fde9d2] py-16">
       
       {/* Heading */}
       <div className="text-center mb-12 px-4">
@@ -138,9 +143,9 @@ export default function AboutSection() {
 
     </section>
 
-    <section className="w-full bg-gradient-to-r from-[#fdfefe] to-[#fdeede] py-16 px-6 md:px-16">
+    <section className="w-full bg-gradient-to-r from-[#fff5ef] to-[#fde9d2] py-16 px-6 md:px-16">
       {/* Title */}
-      <h2 className="text-center text-xl md:text-2xl font-semibold text-orange-500 mb-10">
+      <h2 className="text-center text-2xl md:text-3xl font-semibold text-orange-500 mb-10">
         Our Vision
       </h2>
 
@@ -148,12 +153,12 @@ export default function AboutSection() {
         {/* Left Content */}
         <div>
           <h1 className="text-3xl md:text-4xl font-bold leading-tight">
-            A world where legal <br />
+            A world where legal 
             assistance is{" "}
             <span className="text-orange-500">accessible</span>,{" "}
             <span className="text-orange-500">automated</span>, and{" "}
-            <span className="text-orange-500">affordable</span>
-            <br />— for everyone.
+            <span className="text-orange-500">affordable</span>{" "}
+            — for everyone.
           </h1>
 
           <p className="text-gray-600 mt-6 leading-relaxed max-w-lg">
@@ -166,35 +171,35 @@ export default function AboutSection() {
         </div>
 
         {/* Right Cards */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 mt-6 md:mt-0">
           {/* Card 1 */}
-          <div className="bg-white rounded-xl shadow-md p-6 w-60 ml-auto">
+          <div className="bg-white rounded-xl shadow-md p-6 w-45 ml-auto">
             <img
-              src="/icons/justice.png"
-              className="w-10 h-10 mb-3"
+              src="/image6.png"
+              className="w-10 h-10 mb-3 mx-auto"
               alt=""
             />
-            <p className="font-medium text-gray-700">Justice for all</p>
+            <p className="font-medium text-gray-700 text-center">Justice for all</p>
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white rounded-xl shadow-md p-6 w-60 ml-10">
+          <div className="bg-white rounded-xl shadow-md p-6 w-45 ml-8">
             <img
-              src="/icons/lightbulb.png"
-              className="w-10 h-10 mb-3"
+              src="/image1.png"
+              className="w-10 h-10 mb-3 mx-auto"
               alt=""
             />
-            <p className="font-medium text-gray-700">Smart Solutions</p>
+            <p className="font-medium text-gray-700 text-center">Smart Solutions</p>
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white rounded-xl shadow-md p-6 w-60 ml-auto">
+          <div className="bg-white rounded-xl shadow-md p-6 w-45 ml-auto">
             <img
-              src="/icons/rocket.png"
-              className="w-10 h-10 mb-3"
+              src="/image7.png"
+              className="w-10 h-10 mb-3 mx-auto"
               alt=""
             />
-            <p className="font-medium text-gray-700">Innovation First</p>
+            <p className="font-medium text-gray-700 text-center">Innovation First</p>
           </div>
         </div>
       </div>
@@ -220,7 +225,7 @@ export default function AboutSection() {
         {/* Card 1 */}
         <div className="bg-gradient-to-r from-[#f9c08c] to-[#f6a86a] shadow-lg rounded-xl p-8 text-center">
           <div className="w-14 h-14 bg-black text-white rounded-lg flex items-center justify-center mx-auto mb-4 shadow-md">
-            <img src="/drafting.png" alt="Drafting" className="w-6 h-6" />
+            <img src="/vector2.png" alt="Drafting" className="w-6 h-6" />
           </div>
 
           <h3 className="text-xl font-semibold mb-3">Drafting</h3>
@@ -233,7 +238,7 @@ export default function AboutSection() {
         {/* Card 2 */}
         <div className="bg-gradient-to-r from-[#f9c08c] to-[#f6a86a] shadow-lg rounded-xl p-8 text-center">
           <div className="w-14 h-14 bg-black text-white rounded-lg flex items-center justify-center mx-auto mb-4 shadow-md">
-            <img src="/research.png" alt="Research" className="w-6 h-6" />
+            <img src="/vector3.png" alt="Research" className="w-6 h-6" />
           </div>
 
           <h3 className="text-xl font-semibold mb-3">Research</h3>
@@ -246,7 +251,7 @@ export default function AboutSection() {
         {/* Card 3 */}
         <div className="bg-gradient-to-r from-[#f9c08c] to-[#f6a86a] shadow-lg rounded-xl p-8 text-center">
           <div className="w-14 h-14 bg-black text-white rounded-lg flex items-center justify-center mx-auto mb-4 shadow-md">
-            <img src="/compliance.png" alt="Compliance" className="w-6 h-6" />
+            <img src="/vector1.png" alt="Compliance" className="w-6 h-6" />
           </div>
 
           <h3 className="text-xl font-semibold mb-3">Compliance</h3>
@@ -273,7 +278,7 @@ export default function AboutSection() {
         {faqs.map((faq, i) => (
           <div
             key={i}
-            className="bg-[#f7f7f7] rounded-2xl shadow-md p-6 cursor-pointer transition-all duration-300"
+            className="bg-[#f7f7f7] rounded-2xl shadow-md p-12 cursor-pointer transition-all duration-300"
             onClick={() => setOpenIndex(i === openIndex ? null : i)}
           >
             {/* Question Row */}
@@ -296,13 +301,48 @@ export default function AboutSection() {
           </div>
         ))}
       </div>
-  
+  </section>
 
+  <section className="w-full bg-[#f6cba3] py-16 md:py-20">
+  <div className="max-w-3xl mx-auto text-center px-4 md:px-6">
 
+    {/* Heading */}
+    <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-3">
+      Be First to Know
+    </h2>
 
-  
+    {/* Subheading */}
+    <p className="text-lg md:text-xl text-gray-800 mb-8 md:mb-10">
+      Be part of the legal revolution.
+    </p>
 
-    </section>
+    {/* Form */}
+    <div className="flex flex-col md:flex-row justify-center gap-4 mb-6">
+      
+      {/* Name Input */}
+      <input
+        type="text"
+        placeholder="Name"
+        className="bg-black text-white px-5 py-3 rounded-lg w-full md:w-1/2 outline-none placeholder-gray-300 text-sm md:text-base"
+      />
+
+      {/* Email Input */}
+      <input
+        type="email"
+        placeholder="Email"
+        className="bg-black text-white px-5 py-3 rounded-lg w-full md:w-1/2 outline-none placeholder-gray-300 text-sm md:text-base"
+      />
+    </div>
+
+    {/* Button */}
+    <button className="bg-orange-500 text-white px-10 py-3 text-base md:text-lg rounded-lg hover:bg-orange-600 transition w-full md:w-auto">
+      Notify me
+    </button>
+
+  </div>
+</section>
+
+    
    </section>
   );
 }
