@@ -21,11 +21,11 @@ export default function Footer() {
           </p>
 
           {/* Social Icons */}
-          <div className="flex gap-4 text-orange-500 text-xl">
-            <FaTwitter className="cursor-pointer hover:text-orange-400" />
-            <FaInstagram className="cursor-pointer hover:text-orange-400" />
-            <FaYoutube className="cursor-pointer hover:text-orange-400" />
-            <FaTiktok className="cursor-pointer hover:text-orange-400" />
+          <div className="flex gap-4 text-[#FF954D] text-xl">
+            <FaTwitter className="cursor-pointer hover:text-[#e6853b]" />
+            <FaInstagram className="cursor-pointer hover:text-[#e6853b]" />
+            <FaYoutube className="cursor-pointer hover:text-[#e6853b]" />
+            <FaTiktok className="cursor-pointer hover:text-[#e6853b]" />
           </div>
         </div>
 
@@ -41,22 +41,24 @@ export default function Footer() {
           <h3 className="text-white font-semibold mb-4">Contact Us</h3>
 
           <div className="flex items-center gap-3 mb-3">
-            <FiPhone className="text-orange-500 text-lg" />
+            <FiPhone className="text-[#FF954D] text-lg" />
             <span className="text-sm">+91 1098273459</span>
           </div>
 
           <div className="flex items-center gap-3">
-            <FiMail className="text-orange-500 text-lg" />
+            <FiMail className="text-[#FF954D] text-lg" />
             <span className="text-sm">abale123@gmail.com</span>
           </div>
         </div>
 
+        <div className="border-t border-gray-700 mt-10 pt-6 text-start text-sm text-gray-300">
+        © 2023 PersonaAI. All rights reserved.
+      </div>
+
       </div>
 
       {/* COPYRIGHT */}
-      <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500">
-        © 2023 PersonaAI. All rights reserved.
-      </div>
+      
     </footer>
   );
 }

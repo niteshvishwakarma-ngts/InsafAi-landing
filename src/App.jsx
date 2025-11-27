@@ -1,27 +1,24 @@
-// import './App.css'
-import About from './Component/About';
-import Footer from './Component/Footer';
-import HeroSection from './Component/Home';
-import Navbar from './Component/Navbar';
-import  './assets/style.css'
+import { Routes, Route } from "react-router-dom";
 
+import Footer from "./Component/Footer";
+import AboutSection from "./Component/About";
+import Vision from "./Component/Vision";
+import Contact from "./Component/Contact";
+import HeroSection from "./Component/Home";
+import Navbar from "./Component/Navbar";
 
-function App() {
-  
-
-
+export default function App() {
   return (
     <>
-      
+      <Navbar />
 
-      
-      <Navbar/>
-      <HeroSection/>
-      <About/>
-      <Footer/>
-
+      <Routes>
+        <Route path="/" element={<HeroSection />} />
+        <Route path="/about" element={<AboutSection />} />
+        <Route path="/vision" element={<Vision />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
     </>
-  )
-
-  }
-export default App
+  );
+}

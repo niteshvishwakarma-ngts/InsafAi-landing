@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
+import { Link } from "react-router-dom";
+
 
 export default function Navbar() {
+
   const [open, setOpen] = useState(false);
 
   return (
@@ -10,23 +13,26 @@ export default function Navbar() {
 
         {/* Logo */}
         <div className="flex items-start gap-2">
-          <img
-            src="./public/logo.png" 
-            alt="logo"
-            className="w-15 h-15 object-contain "
-          />
-          {/* <span className="text-lg font-semibold tracking-wide">INSAAF AI</span> */}
-        </div>
+  <Link to="/">
+    <img
+      src="/logo.png" 
+      alt="logo"
+      className="w-15 h-15 object-contain cursor-pointer"
+    />
+  </Link>
+</div>
+
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-10 text-sm">
-          <a href="#" className="hover:text-gray-300 duration-200">About Us</a>
-          <a href="#" className="hover:text-gray-300 duration-200">Vision</a>
-          <a href="#" className="hover:text-gray-300 duration-200">Contact Us</a>
-        </div>
+  <Link to="/about" className="hover:text-gray-300 duration-200">About Us</Link>
+  <Link to="/vision" className="hover:text-gray-300 duration-200">Vision</Link>
+  <Link to="/contact" className="hover:text-gray-300 duration-200">Contact Us</Link>
+</div>
+
 
         {/* Login Button */}
-        <button className="hidden md:block px-5 py-1.5 rounded-md text-sm hover:bg-orange-500 hover:text-black transition">
+        <button className="hidden md:block px-5 py-1.5 rounded-md text-sm hover:border border-[#FF954D] hover:text-[#FF954D] transition">
           Login
         </button>
 
@@ -41,16 +47,20 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-[#2f2f2f] px-6 pb-4 space-y-4 text-sm z-10">
-          <a href="#" className="block">About Us</a>
-          <a href="#" className="block">Vision</a>
-          <a href="#" className="block">Contact Us</a>
+  <div className="md:hidden absolute top-16 left-0 w-full 
+      bg-[#2f2f2f] px-6 pb-4 space-y-4 text-sm z-50 shadow-lg">
+      
+    <Link to="/about" className="block">About Us</Link>
+    <Link to="/vision" className="block">Vision</Link>
+    <Link to="/contact" className="block">Contact Us</Link>
 
-          <button className="border border-orange-500 px-5 py-1.5 rounded-md text-sm hover:bg-orange-500 hover:text-black transition w-full mt-2">
-            Login
-          </button>
-        </div>
-      )}
+    <button className="border border-orange-500 px-5 py-1.5 rounded-md text-sm 
+            hover:bg-orange-500 hover:text-black transition w-full mt-2">
+      Login
+    </button>
+  </div>
+)}
+
     </nav>
   );
 }
