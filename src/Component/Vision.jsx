@@ -71,7 +71,7 @@ export default function Vision() {
     lg:mt-4 
   ">
     <img src="/image1.png" className="w-10 h-10 mb-3 mx-auto" />
-    <p className="font-medium text-gray-700 text-center">Smart Solutions</p>
+    <p className="font-medium text-gray-900 text-center">Smart Solutions</p>
   </div>
 
   {/* Card 3 — slight left shift (desktop) */}
@@ -84,7 +84,7 @@ export default function Vision() {
     
   ">
     <img src="/image7.png" className="w-10 h-10 mb-3 mx-auto" />
-    <p className="font-medium text-gray-700 text-center">Innovation First</p>
+    <p className="font-medium text-gray-900 text-center">Innovation First</p>
   </div>
 
 </div>

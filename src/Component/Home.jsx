@@ -10,9 +10,17 @@ export default function HeroSection() {
   const [openIndex, setOpenIndex] = useState(0);
   const faqs = [
       {
-        question: "What is Insaaf AI?",
-        answer:
-          "Insaaf AI is India's first AI-powered Legal Operating System designed to help lawyers, law firms, and citizens automate legal workflows, conduct research and ensure compliance with regulations.",
+        question: "What are the global legal barriers and what solution does Insaaf AI provide?",
+        answer: `
+
+Global legal systems are slow, expensive, and inaccessible to billions. 
+InsaafAI solves this using domain-specific AI (LLM fine-tuning and RAG) to deliver instant, accurate legal insights.
+
+It accelerates drafting, automates workflows, and enables multi-jurisdictional legal research while maintaining enterprise-grade security (SOC 2 / GDPR). 
+This reduces costs and makes high-quality legal expertise scalable, accessible, and equitable.
+
+It is designed for lawyers, law firms, businesses, and citizens to automate legal processes, conduct research, and stay compliant with regulations.
+`,
       },
       {
         question: "When will Insaaf AI launch?",
@@ -39,7 +47,10 @@ export default function HeroSection() {
     <>
     <section
       className="relative w-full h-screen bg-cover bg-center flex items-center"
-      style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+      // style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+      style={{ backgroundImage: "url('/bghome.jpg')" }}
+      // style={{ backgroundImage: "url('/bghome1.png')" }}
+      // style={{ backgroundImage: "url('/bghome2.jpg')" }}
     >
       {/* Overlay */}
       {/* <div className="absolute inset-0 bg-black/50"></div> */}
@@ -70,7 +81,7 @@ export default function HeroSection() {
     
       <div className="text-center mb-12 px-4">
         <h2 className="text-[#FF954D] text-3xl font-semibold mb-3">What Drives Us</h2>
-        <p className="text-gray-700 text-lg">
+        <p className="text-gray-900 text-lg">
           Our core values guide every decision we make and every solution we build
         </p>
       </div>
@@ -105,7 +116,7 @@ export default function HeroSection() {
           </div>
     
           <h3 className="text-2xl font-semibold mt-8">Integrity</h3>
-          <p className="text-gray-600 mt-6">Ensuring fairness and accuracy in <br /> every output.</p>
+          <p className="text-gray-900 mt-6">Ensuring fairness and accuracy in <br /> every output.</p>
         </div>
     
         {/* CARD 3 */}
@@ -120,7 +131,7 @@ export default function HeroSection() {
           </div>
     
           <h3 className="text-2xl font-semibold mt-8">Impact</h3>
-          <p className="text-gray-600 mt-6">Empowering legal professionals and citizens alike.</p>
+          <p className="text-gray-900 mt-6">Empowering legal professionals and citizens alike.</p>
         </div>
     
       </div>
@@ -133,7 +144,7 @@ export default function HeroSection() {
             Powerful Legal AI Features
           </h2>
 
-          <p className="mt-3 text-gray-700 text-lg">
+          <p className="mt-3 text-gray-900 text-lg">
             Transform your legal practice with intelligent automation and
             AI-driven insights.
           </p>
@@ -148,7 +159,7 @@ export default function HeroSection() {
             </div>
 
             <h3 className="text-xl font-semibold mb-3">Drafting</h3>
-            <p className="text-gray-800 lg:leading-8 text-start">
+            <p className="text-gray-900 lg:leading-8 text-start">
               AI-powered document generation and editing tools that help legal
               professionals create accurate contracts and agreements in minutes.
             </p>
@@ -160,7 +171,7 @@ export default function HeroSection() {
             </div>
 
             <h3 className="text-xl font-semibold mb-3">Research</h3>
-            <p className="text-gray-800 lg:leading-8 text-start">
+            <p className="text-gray-900 lg:leading-8 text-start">
               Advanced legal research capabilities that analyze case law,
               statutes, and precedents to provide comprehensive insights.
             </p>
@@ -173,13 +184,129 @@ export default function HeroSection() {
             </div>
 
             <h3 className="text-xl font-semibold mb-3">Compliance</h3>
-            <p className="text-gray-800 lg:leading-8 text-start">
+            <p className="text-gray-900 lg:leading-8 text-start">
               Ensure adherence to regulatory requirements with automated
               compliance checks and documentation workflows.
             </p>
           </div>
         </div>
       </section>
+
+      <section className="w-full bg-linear-to-br from-[#fff5ef] to-[#fde9d2] py-16 px-6">
+
+  {/* Heading */}
+  <div className="text-center mb-12">
+    <h2 className="text-[#FF954D] text-2xl md:text-3xl font-semibold">
+      Key Features
+    </h2>
+    <p className="text-gray-900 font-semibold text-sm md:text-xl mt-4">
+      AI that simplifies, accelarates and empowers
+    </p>
+  </div>
+
+  {/* Cards Wrapper */}
+  <div
+    className="
+      max-w-4xl mx-auto 
+      grid grid-cols-1 md:grid-cols-2 
+      gap-10
+      place-items-center
+    "
+  >
+
+    {/* CARD 1 — */}
+    <div className="
+      relative bg-[#fbe8d9] 
+      rounded-2xl 
+      border-[17px_8px] border-[#ff954d]
+      shadow-[0px_6px_12px_rgba(0,0,0,0.1)]
+      p-10 
+      w-full max-w-md 
+      text-center
+    ">
+      
+      {/* Floating Icon */}
+      <div className="
+        absolute -top-[-25px]
+        left-1/2 -translate-x-1/2 
+        -translate-y-1
+        flex items-center justify-center
+      ">
+        <img src="/frame.png" className="w-16 h-16" />
+      </div>
+
+      <h3 className="text-lg md:text-2xl font-semibold mt-16">
+        Storytelling Engine
+      </h3>
+
+      <p
+  className="
+    text-gray-900 
+    text-xs sm:text-sm md:text-base 
+    mt-3 sm:mt-4 
+    leading-6 sm:leading-7 md:leading-8 
+    text-start
+  "
+>
+  <span className="block">Our storytelling engine transforms complex</span>
+  <span className="block">legal facts into clear, compelling narratives.</span>
+  <span className="block">By converting raw case data into structured,</span>
+  <span className="block">human-understandable stories, it empowers</span>
+  <span className="block">lawyers, clients, and courts with better clarity.</span>
+</p>
+
+
+    </div>
+
+    {/* CARD 2 —*/}
+    <div className="
+      relative bg-[#fbe8d9] 
+      rounded-2xl 
+      border-[16px_8px] border-[#ff954d] 
+      shadow-[12px_6px_12px_rgba(0,0,0,0.1)]
+      p-10 
+      w-full max-w-md 
+      text-center
+    ">
+      
+      {/* Floating Icon */}
+      <div className="
+        absolute -top-[-25px] 
+        left-1/2 -translate-x-1/2 
+        -translate-y-1
+        flex items-center justify-center
+      ">
+        <img src="/frame.png" className="w-16 h-16" />
+      </div>
+
+      <h3 className="text-lg md:text-2xl font-semibold mt-16">
+        Legal Voice Automation
+      </h3>
+
+      <p className="
+  text-gray-900 
+  text-xs sm:text-sm md:text-base 
+  mt-3 sm:mt-4 
+  leading-6 sm:leading-8 
+  text-start
+">
+  <span className="block">Our advanced speech-to-text accurately</span>
+  <span className="block">converts legal conversations, arguments, and</span>
+  <span className="block">dictations into structured documents.</span>
+  <span className="block">It eliminates manual note-taking, reduces</span>
+  <span className="block">errors, and accelerates case preparation.</span>
+</p>
+
+
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
       <section className="w-full bg-linear-to-r from-[#fff5ef] to-[#fde9d2] py-20">
         <h2 className="text-center text-[#FF954D] text-3xl md:text-4xl font-semibold mb-10">
           Frequently Asked Questions
@@ -207,7 +334,7 @@ export default function HeroSection() {
 
               {/* Answer */}
               {openIndex === i && faq.answer && (
-                <p className="mt-3 text-gray-600 leading-relaxed">
+                <p className="mt-3 text-gray-900 leading-relaxed">
                   {faq.answer}
                 </p>
               )}
@@ -216,6 +343,9 @@ export default function HeroSection() {
         </div>
       </section>
        <Contact/>
+       <section className="w-full  bg-white py-20">
+        
+       </section>
     </>
   );
 }
